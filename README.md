@@ -19,9 +19,9 @@ A modern, responsive portfolio website showcasing AI development skills, cyberse
 
 *Replace `yourusername` and `repository-name` with your actual GitHub username and repository name*
 
-## 📱 Screenshots
+<!--## 📱 Screenshots
 
-*Add screenshots of your website here*
+*Add screenshots of your website here*-->
 
 ## 🛠️ Technologies Used
 
