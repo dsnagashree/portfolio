@@ -18,9 +18,9 @@ A modern, responsive portfolio website showcasing AI development skills, cyberse
 
 [View Live Portfolio](https://nagashreekashyap.github.io/portfolio/)
 
-## 📱 Screenshots
+<!--## 📱 Screenshots
 
-*Add screenshots of your website here*
+*Add screenshots of your website here*-->
 
 ## 🛠️ Technologies Used
 
