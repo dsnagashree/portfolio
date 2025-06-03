@@ -144,6 +144,118 @@
             opacity: 0.8;
             color: #c0c0c0;
         }
+	    /* Floating geometric elements */
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .floating-element {
+            position: absolute;
+            opacity: 0.8;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-element:nth-child(1) {
+            top: 10%;
+            left: 15%;
+            width: 60px;
+            height: 20px;
+            background: #4CAF50;
+            border-radius: 10px;
+            animation-delay: 0s;
+        }
+
+        .floating-element:nth-child(2) {
+            top: 15%;
+            right: 10%;
+            width: 80px;
+            height: 20px;
+            background: #9C27B0;
+            border-radius: 10px;
+            animation-delay: 2s;
+        }
+
+        .floating-element:nth-child(3) {
+            top: 5%;
+            right: 30%;
+            width: 30px;
+            height: 30px;
+            background: transparent;
+            border: 3px solid #FF9800;
+            border-radius: 50%;
+            animation-delay: 1s;
+        }
+
+        .floating-element:nth-child(4) {
+            top: 25%;
+            right: 20%;
+            width: 15px;
+            height: 15px;
+            background: #E91E63;
+            border-radius: 50%;
+            animation-delay: 3s;
+        }
+
+        .floating-element:nth-child(5) {
+            bottom: 30%;
+            left: 10%;
+            width: 50px;
+            height: 20px;
+            background: #2196F3;
+            border-radius: 25px;
+            animation-delay: 4s;
+        }
+
+        .floating-element:nth-child(6) {
+            bottom: 20%;
+            right: 15%;
+            width: 25px;
+            height: 25px;
+            background: transparent;
+            border: 2px solid #4CAF50;
+            border-radius: 50%;
+            animation-delay: 5s;
+        }
+
+        .floating-element:nth-child(7) {
+            bottom: 15%;
+            left: 30%;
+            width: 100px;
+            height: 25px;
+            background: transparent;
+            border: 3px solid #607D8B;
+            border-radius: 15px;
+            animation-delay: 1.5s;
+        }
+
+        .floating-element:nth-child(8) {
+            bottom: 40%;
+            right: 35%;
+            width: 20px;
+            height: 20px;
+            background: #FF5722;
+            border-radius: 50%;
+            animation-delay: 2.5s;
+        }
+
+	
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            33% {
+                transform: translateY(-20px) rotate(120deg);
+            }
+            66% {
+                transform: translateY(10px) rotate(240deg);
+            }
+        }
+
 
         .cta-buttons {
             display: flex;
@@ -597,6 +709,19 @@
     </style>
 </head>
 <body>
+	<div class="hero-container">
+        <!-- Floating geometric elements -->
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+
     <nav class="nav-bar">
         <div class="nav-content">
             <div class="nav-logo">Nagashree DS</div>
@@ -619,7 +744,7 @@
 	<p class="description">
                 Passionate about leveraging technology to solve real-world challenges. <br>
                 Experienced in developing intelligent systems and building innovative AI/ML applications.<br>
-
+		<p><br></p>
             </p>
 
 	<div class="cta-buttons">
@@ -631,21 +756,6 @@
 </section>
   	
 
-<!--<section id="home" class="hero-section">
-           <div id="canvas-container"></div>
-        <div class="hero-content">
-            <h1>Nagashree DS</h1>
-            <p class="subtitle">AI Developer • Cybersecurity Enthusiast • Full-Stack Learner</p>
-            <p class="description">
-                <p>Passionate about leveraging technology to solve real-world challenges. </p>
-                <p>Experienced in developing intelligent systems and building innovative AI/ML applications.</p>
-            </p>
-	            <div class="cta-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
-        </div>
-    </section>-->
 
     <section id="about" class="section">
         <h2 class="section-title">About Me</h2>
