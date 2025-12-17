@@ -23,61 +23,71 @@
             overflow-x: hidden;
             scroll-behavior: smooth;
         }
-        /* --- SPLIT HERO LAYOUT --- */
+        /* --- CIRCLE-SPLIT HERO --- */
 .hero-split {
     height: 100vh;
     display: flex;
     align-items: center;
-    overflow: hidden;
     background-color: var(--bg-dark);
+    padding: 0 8%;
 }
 
 .hero-image-side {
-    flex: 1;
-    height: 100%;
+    flex: 0.8; /* Reduced width for a cleaner look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    border-right: 1px solid rgba(0, 242, 255, 0.1);
 }
 
-.hero-image-side img {
+/* Circular Frame with Focus on Face */
+.circle-frame {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    padding: 10px;
+    box-shadow: 0 0 40px rgba(0, 242, 255, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+.circle-frame img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Zooms to fill height */
-    /* Adjust 15% to move focus up/down based on your height in the photo */
+    object-fit: cover;
+    /* Auto-crop focused on your face in the top section of the photo */
     object-position: center 15%; 
-    filter: contrast(1.1) brightness(0.9);
+    border-radius: 50%;
+    filter: brightness(1.1);
 }
 
 .hero-content-side {
     flex: 1.2;
-    padding: 0 8%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding-left: 5%;
     z-index: 10;
-    text-align: left;
 }
 
 .hero-content-side p.cmd {
     color: var(--secondary);
     font-family: 'Fira Code', monospace;
     font-size: 1.1rem;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .hero-content-side h1 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2.5rem, 5vw, 4.2rem);
+    font-size: clamp(2.5rem, 5vw, 3.8rem);
     margin-bottom: 1rem;
     font-style: italic;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 .hero-content-side p.desc {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: var(--text-muted);
     margin-bottom: 2.5rem;
-    max-width: 500px;
+    max-width: 550px;
 }
 
 .cta-btn {
@@ -95,6 +105,12 @@
 .cta-btn:hover {
     background: rgba(0, 242, 255, 0.1);
     box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+}
+
+@media (max-width: 900px) { 
+    .hero-split { flex-direction: column; text-align: center; padding-top: 100px; }
+    .hero-content-side { padding-left: 0; padding-top: 40px; }
+    .circle-frame { width: 250px; height: 250px; }
 }
 
 @media (max-width: 900px) { 
@@ -168,10 +184,7 @@
     <div class="hero-content-side">
         <p class="cmd">> print("Innovation & Logic")</p>
         <h1>I am <span class="highlight">Nagashree DS</span></h1>
-        <p class="desc">Computer Science Engineer [cite: 78] | AI Developer [cite: 85] | Python Enthusiast [cite: 80]</p>
-        <div>
-            <a href="#contact" class="cta-btn">INITIALIZE CONTACT</a>
-        </div>
+        <p class="desc">Computer Science Engineer | Python Enthusiast | Researcher | AI Developer specializing in Cybersecurity Solutions </p>
     </div>
 </section>
     
@@ -180,7 +193,7 @@
             <img src="images/black dress.jpg" alt="Nagashree DS" class="hero-img">
             <p style="color: var(--secondary); font-family: 'Fira Code';">> print("AI & Test Automation")</p>
             <h1>I am <span class="highlight">Nagashree DS</span></h1>
-            <p>Computer Science Engineer | Python Enthusiast | Researcher</p>
+            <p>Computer Science Engineer | Python Enthusiast | Researcher | AI Developer specializing in Cybersecurity Solutions</p>
         </div>
     </section>--*/
 
