@@ -23,95 +23,6 @@
             overflow-x: hidden;
             scroll-behavior: smooth;
         }
-        /* --- CIRCLE-SPLIT HERO --- */
-.hero-split {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    background-color: var(--bg-dark);
-    padding: 0 8%;
-}
-
-.hero-image-side {
-    flex: 0.8; /* Reduced width for a cleaner look */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-/* Circular Frame with Focus on Face */
-.circle-frame {
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    border: 2px solid var(--primary);
-    padding: 10px;
-    box-shadow: 0 0 40px rgba(0, 242, 255, 0.2);
-    overflow: hidden;
-    position: relative;
-}
-
-.circle-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* Auto-crop focused on your face in the top section of the photo */
-    object-position: center 15%; 
-    border-radius: 50%;
-    filter: brightness(1.1);
-}
-
-.hero-content-side {
-    flex: 1.2;
-    padding-left: 5%;
-    z-index: 10;
-}
-
-.hero-content-side p.cmd {
-    color: var(--secondary);
-    font-family: 'Fira Code', monospace;
-    font-size: 1.1rem;
-    margin-bottom: 12px;
-}
-
-.hero-content-side h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2.5rem, 5vw, 3.8rem);
-    margin-bottom: 1rem;
-    font-style: italic;
-    line-height: 1.2;
-}
-
-.hero-content-side p.desc {
-    font-size: 1.15rem;
-    color: var(--text-muted);
-    margin-bottom: 2.5rem;
-    max-width: 550px;
-}
-
-.cta-btn {
-    text-decoration: none;
-    padding: 14px 35px;
-    border: 1px solid var(--primary);
-    color: var(--primary);
-    border-radius: 4px;
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-    transition: 0.3s;
-    font-family: 'Fira Code', monospace;
-}
-
-.cta-btn:hover {
-    background: rgba(0, 242, 255, 0.1);
-    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
-}
-
-@media (max-width: 900px) { 
-    .hero-split { flex-direction: column; }
-    .hero-image-side { width: 100%; height: 45vh; flex: none; }
-    .hero-content-side { width: 100%; padding: 50px 8%; flex: none; text-align: center; }
-}
 
         #canvas-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.4; }
 
@@ -170,26 +81,15 @@
             </ul>
         </div>
     </nav>
-
-    <section class="hero-split" id="home">
-    <div class="hero-image-side">
-        <img src="images/black_dress1.jpg" alt="Nagashree DS Professional Photo">
-    </div>
-    <div class="hero-content-side">
-        <p class="cmd">> print("Innovation & Logic")</p>
-        <h1>I am <span class="highlight">Nagashree DS</span></h1>
-        <p class="desc">Computer Science Engineer | Python Enthusiast | Researcher | AI Developer specializing in Cybersecurity Solutions </p>
-    </div>
-</section>
     
-    /*--<section class="hero" id="home">
+    <section class="hero" id="home">
         <div class="hero-content">
-            <img src="images/black dress.jpg" alt="Nagashree DS" class="hero-img">
+            <img src="images/IMG_20241211_220845.jpg" alt="Nagashree DS" class="hero-img">
             <p style="color: var(--secondary); font-family: 'Fira Code';">> print("Innovation & Logic")</p>
             <h1>I am <span class="highlight">Nagashree DS</span></h1>
             <p>Computer Science Engineer | Python Enthusiast | Researcher | AI Developer specializing in Cybersecurity Solutions</p>
         </div>
-    </section>--*/
+    </section>
 
     <section id="about" class="section">
         <span class="section-title">01 / Profile</span>
